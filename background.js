@@ -1,4 +1,6 @@
-chrome.commands.onCommand.addListener((command) => {
+
+// Momo notification, maybe I will add this back in near future
+/*chrome.commands.onCommand.addListener((command) => {
   if (command === "say-hello") {
     chrome.notifications.create({
       type: "basic",
@@ -6,5 +8,11 @@ chrome.commands.onCommand.addListener((command) => {
       title: "Hello World",
       message: "Triggered by hotkey!"
     });
+  }
+});*/ 
+
+chrome.commands.onCommand.addListener((command) => {
+  if (command === "open-popup") {
+    chrome.action.openPopup();
   }
 });

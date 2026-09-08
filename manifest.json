@@ -1,18 +1,35 @@
 {
   "manifest_version": 3,
   "name": "Hello World Extension",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Hello World triggered by hotkey",
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["notifications"],   
+  // "permissions": ["notifications"],   
+  "action": {
+    "default_popup": "popup.html"
+  },
+  //Update command, try using popup ++
+
+  // "commands": {
+  //     "say-hello": {
+  //       "suggested_key": {
+  //         "default": "Ctrl+Shift+Y"
+  //       },
+  //       "description": "Say Hello World"
+  //     }
+  //   }
+
+  //Update command, try using popup --
+
   "commands": {
-      "say-hello": {
-        "suggested_key": {
-          "default": "Ctrl+Shift+Y"
-        },
-        "description": "Say Hello World"
-      }
+    "open-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Open Hello World popup"
     }
   }
+
+}

@@ -8,3 +8,7 @@ From here, I will make every commit a release note(or not), to record what I hav
 Version 1.1, 
   1. Add hotkey
   2. Add an Icon, momo, my brother's dog, She's so cute. 
+
+Version 1.2,
+  1. So it turns out that the icon I add is actually like a notification, good to know :)
+  2. In 1.2, I will try popup.html, not notifications API.
