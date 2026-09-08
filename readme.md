@@ -16,3 +16,6 @@ Version 1.2,
 Version 1.3
   1. Trying to modify popup screen more like a adjustible sidebar
   2. Ok, I failed on made it adjustible, yet I made it more like a UI Interface
+
+Version 1.4
+  1. It is changable, but not what I expect. I'll take this as a checkpoint.

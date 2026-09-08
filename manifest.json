@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hello World Extension",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Hello World triggered by hotkey",
   "background": {
     "service_worker": "background.js"
