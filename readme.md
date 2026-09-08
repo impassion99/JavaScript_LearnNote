@@ -12,3 +12,7 @@ Version 1.1,
 Version 1.2,
   1. So it turns out that the icon I add is actually like a notification, good to know :)
   2. In 1.2, I will try popup.html, not notifications API.
+
+Version 1.3
+  1. Trying to modify popup screen more like a adjustible sidebar
+  2. Ok, I failed on made it adjustible, yet I made it more like a UI Interface

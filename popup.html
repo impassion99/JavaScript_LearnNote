@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World</title>
+    <title>Hello World Sidebar</title>
     <style>
-      body { font-family: Arial, sans-serif; padding: 20px; }
-      h1 { color: #4CAF50; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 300px; /* 可以依需求調整 */
+        width: 400px;  /* popup 視窗大小 */
+      }
+
+      /* Sidebar */
+      .sidebar {
+        width: 120px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      .sidebar h2 {
+        font-size: 16px;
+        margin-top: 0;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        margin: 10px 0;
+        cursor: pointer;
+      }
+
+      /* Main content */
+      .content {
+        flex: 1;
+        padding: 20px;
+        background-color: #ecf0f1;
+      }
+
+      .content h1 {
+        color: #4CAF50;
+      }
     </style>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <button id="btn">Click Me</button>
-      <!-- <script>
-        document.getElementById("btn").addEventListener("click", () => {
-          alert("Hello World from Popup!");
-        });
-      </script> -->
-      <script src="popup.js"></script>
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Hello, World!</h1>
+      <button id="btn">Click Me</button>
+    </div>
+
+    <script src="popup.js"></script>
   </body>
 </html>
